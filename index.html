@@ -1,19 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-<script>
-  // 路径自动修正脚本
-  document.addEventListener('error', function (e) {
-    if (e.target.tagName === 'IMG') {
-      const currentSrc = e.target.src;
-      // 如果图片加载失败，且路径中没有包含 /demo1/，则尝试补全路径
-      if (!currentSrc.includes('/demo1/')) {
-        const fileName = currentSrc.split('/').pop();
-        e.target.src = '/demo1/' + fileName;
-      }
-    }
-  }, true);
-</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JoyToy - 专业玩具制造商</title>
+    <script type="module" crossorigin src="./assets/index-CWIAQi-S.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-B5N36RsN.css">
   </head>
   <body>
     <div id="root"></div>
